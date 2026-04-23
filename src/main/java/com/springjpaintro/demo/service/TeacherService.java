@@ -40,7 +40,7 @@ public class TeacherService {
         if (teacherOpt.isEmpty()) {
             return Optional.empty();
         }
-        Teacher teacher = teacherOpt.get();
+        Teacher teacher =gt teacherOpt.get();
         if (updates.containsKey("name")) {
             teacher.setName((String) updates.get("name"));
         }
